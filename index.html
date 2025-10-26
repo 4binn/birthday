@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Camatt ulang tahunn pesekkk 🎉</title>
+    <title>Happy Birthday! 🎉</title>
     <style>
       * {
         margin: 0;
@@ -502,30 +502,245 @@
 
       /* Responsive */
       @media (max-width: 768px) {
-        .birthday-card {
-          width: 320px;
-          height: 450px;
+        body {
+          padding: 0 1rem;
+        }
+
+        .nav-bar {
+          padding: 1rem 1rem;
         }
 
         .nav-content {
           gap: 0.5rem;
+          flex-wrap: wrap;
         }
 
         .nav-btn {
           padding: 0.6rem 1rem;
-          font-size: 0.8rem;
+          font-size: 0.75rem;
+        }
+
+        .card-container {
+          margin-top: 100px;
+        }
+
+        .birthday-card {
+          width: 90vw;
+          max-width: 340px;
+          height: 480px;
+        }
+
+        .card-front h1 {
+          font-size: 2rem;
         }
 
         .card-front h2 {
           font-size: 2.8rem;
         }
 
+        .card-front h3 {
+          font-size: 1.5rem;
+        }
+
         .cake-icon {
           font-size: 4.5rem;
+          margin: 1.5rem 0;
+        }
+
+        .tap-hint {
+          font-size: 0.85rem;
+          padding: 0.6rem 1.2rem;
+        }
+
+        .card-back {
+          padding: 1.5rem;
+        }
+
+        .profile-section {
+          width: 100px;
+          height: 100px;
+        }
+
+        .card-back h2 {
+          font-size: 1.2rem;
+        }
+
+        .card-back h3 {
+          font-size: 1.8rem;
+        }
+
+        .card-back h4 {
+          font-size: 1.1rem;
+        }
+
+        .message-box {
+          padding: 1rem;
+        }
+
+        .message-box p {
+          font-size: 0.85rem;
         }
 
         .modal-content {
-          padding: 2rem;
+          padding: 2rem 1.5rem;
+          width: 85%;
+        }
+
+        .modal-content h3 {
+          font-size: 1.5rem;
+        }
+
+        .modal-content p {
+          font-size: 0.95rem;
+        }
+
+        .modal-btn {
+          padding: 0.85rem 1.5rem;
+          font-size: 0.9rem;
+        }
+
+        .music-control {
+          width: 50px;
+          height: 50px;
+          bottom: 1.5rem;
+          right: 1.5rem;
+        }
+
+        .music-control svg {
+          width: 24px;
+          height: 24px;
+        }
+
+        .float-img {
+          opacity: 0.25;
+        }
+
+        .star-img {
+          width: 70px;
+          top: 5%;
+          left: 5%;
+        }
+
+        .balloon-img {
+          height: 100px;
+          top: 8%;
+          right: 5%;
+        }
+
+        .cat-img {
+          height: 90px;
+          bottom: 3%;
+          left: 3%;
+        }
+
+        .float-item {
+          font-size: 2rem !important;
+          opacity: 0.1;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .nav-btn {
+          padding: 0.5rem 0.8rem;
+          font-size: 0.7rem;
+        }
+
+        .birthday-card {
+          width: 95vw;
+          max-width: 300px;
+          height: 420px;
+        }
+
+        .card-front h1 {
+          font-size: 1.8rem;
+        }
+
+        .card-front h2 {
+          font-size: 2.3rem;
+        }
+
+        .card-front h3 {
+          font-size: 1.3rem;
+        }
+
+        .cake-icon {
+          font-size: 3.5rem;
+          margin: 1rem 0;
+        }
+
+        .card-back {
+          padding: 1.2rem;
+        }
+
+        .profile-section {
+          width: 80px;
+          height: 80px;
+          margin-bottom: 1rem;
+        }
+
+        .card-back h2 {
+          font-size: 1rem;
+        }
+
+        .card-back h3 {
+          font-size: 1.5rem;
+        }
+
+        .message-box {
+          padding: 0.8rem;
+        }
+
+        .message-box p {
+          font-size: 0.8rem;
+        }
+
+        .modal-content {
+          padding: 1.5rem 1rem;
+        }
+
+        .modal-content h3 {
+          font-size: 1.3rem;
+        }
+
+        .modal-content p {
+          font-size: 0.85rem;
+        }
+
+        .modal-btn {
+          padding: 0.75rem 1.2rem;
+          font-size: 0.85rem;
+        }
+
+        .star-img {
+          width: 50px;
+        }
+
+        .balloon-img {
+          height: 80px;
+        }
+
+        .cat-img {
+          height: 70px;
+        }
+      }
+
+      @media (max-width: 360px) {
+        .birthday-card {
+          width: 98vw;
+          max-width: 280px;
+          height: 400px;
+        }
+
+        .card-front h2 {
+          font-size: 2rem;
+        }
+
+        .cake-icon {
+          font-size: 3rem;
+        }
+
+        .card-back h3 {
+          font-size: 1.3rem;
         }
       }
     </style>
@@ -619,8 +834,8 @@
     <div class="confetti-container" id="confettiContainer"></div>
 
     <!-- Audio -->
-    <audio id="bgMusic" loop>
-      <source src="assets/ssstik.io_1745935198507.mp4" type="audio/mpeg" />
+    <audio id="bgMusic" loop autoplay>
+      <source src="assets/music.mp3" type="audio/mpeg" />
     </audio>
 
     <script>
@@ -631,7 +846,35 @@
       const bgMusic = document.getElementById("bgMusic");
       const modal = document.getElementById("modal");
 
+      // Auto play music on page load
+      window.addEventListener("load", function () {
+        bgMusic
+          .play()
+          .then(() => {
+            isMusicPlaying = true;
+            musicControl.classList.add("playing");
+          })
+          .catch((e) => {
+            console.log(
+              "Auto-play prevented. User needs to interact first:",
+              e
+            );
+            // If autoplay fails, music will play on first user interaction
+          });
+      });
+
       function flipCard() {
+        // Try to play music on first interaction if autoplay failed
+        if (!isMusicPlaying) {
+          bgMusic
+            .play()
+            .then(() => {
+              isMusicPlaying = true;
+              musicControl.classList.add("playing");
+            })
+            .catch((e) => console.log("Play failed:", e));
+        }
+
         isCardFlipped = !isCardFlipped;
         card.classList.toggle("flipped");
       }
